@@ -1,0 +1,55 @@
+Blowfish bindings for lua.
+
+LICENSE:
+
+This lib uses part of the code coming from the nettle library
+which is lgpl'd. I think that means this must be LGPL'd as well.
+
+Anyway, this lib is released under LGPL, which means
+	You need to release the source if you make derivative work...
+	basically if you use the source for anything, that thing must be
+	released under LGPL
+
+	If you use this ("bf = require 'blowfish'"), it is not derivative
+	work, you're just making use of the library and that doesn't mean
+	that code must be LGPL'd or GPL'd or free software or even open source.
+	(If you're wondering "but I have to distribute sources for a person
+	to be able to run lua scripts", google luac)
+
+You SHOULD read the LGPL anyway, including that famous disclaimer.
+
+The LGPL is available at 'LICENSE'.
+
+BUILDING:
+
+This is atm using lua5.1 library. It should* work with newer versions.
+It expects lua's headers to be in a folder called "lua5.1".
+
+There are two ways of building lua-blowfish.
+
+1) make
+	This is cool if you're on linux and don't really want to install
+	to some common directory, just want to build the shared object.
+
+	I wrote it in a linux only fashion, because I was using linux
+	and I am really no make god, so I didn't want to spend a lot of
+	time learning it.
+
+2) luarocks
+	LuaRocks should be able to compile this in every major OS, I am not
+	sure, though. It worked on more than one linux distro and a Mac.
+
+If you're having problems and you're using some UNIX based OS, then
+ask for help. If you're using Windows, just die. Or give up (on win).
+
+CONTRIBUTING:
+
+I don't really care how you like to code, the only thing I do care is
+TABS ARE TABS. Not spaces, tabs, \t, got it? Ok, :D
+
+DOCUMENTATION:
+
+There's an example in the examples folder and cool ldoc documentation in
+the doc folder. Just open index.html and everything should be clear.
+I tried my best to have cool documentation and I think that's the only
+thing I didn't screw up. Well I hope I haven't.
